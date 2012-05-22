@@ -8,7 +8,6 @@
 
 /* HTML Elements */
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
     position: relative;
@@ -25,9 +24,11 @@ a {
 
 a:hover {
     color: #C40619;
-    text-decoration: underline;
 }
 
+.clear {
+    clear: both;
+}
 /*=========================================================
  *
  * HEADERS
@@ -86,14 +87,21 @@ div {
  *
  * ========================================================*/
 #header_wrapper {
-    height: 150px;
+    height: 600px;
     position: relative;
 }
 
-    #header {
-        margin: 100px 0 5% 0;
+    #blog_banner {
+        background: url(../image/colored_tiles.jpg) no-repeat;
+        border-radius: 15px;
+        height: 355px;
+        margin: 10px 30% 0 30%;
+        width: 719px;
     }
 
+    #header {
+        padding: 200px;
+    }
 
 /*=========================================================
  *
@@ -120,13 +128,11 @@ div {
     }
 
         #site_nav {
-            height: 100%;
             margin: 0 5%;
         }
 
             #site_nav a {
                 display: block;
-                height: 100%;
                 float: left;
                 margin: 0 2%;
                 min-width: 120px;
@@ -148,7 +154,6 @@ div {
  *
  * ========================================================*/
 #content_wrapper {
-    height: 100%;
     margin: 0 5%;
     padding: 0 0 95px 0;
     position: relative;
@@ -162,7 +167,6 @@ div {
 #main_content_wrapper {
     background: #53DBBB;
     border: 1px dashed #12A5B0;
-    height: 100%;
     position: relative;
     width: 100%;
 }
