@@ -84,7 +84,6 @@ div {
  *
  * ========================================================*/
 #header_wrapper {
-    height: 450px;
     position: relative;
 }
 
@@ -92,14 +91,16 @@ div {
         background: url(../image/colored_tiles.jpg) no-repeat;
         border: 6px solid #FD003B;
         border-radius: 15px;
-        float: left;
         height: 280px;
         margin: 10px 30% 0 30%;
         width: 719px;
     }
+        #blog_banner h1 {
+            background: rgba(255,255,255,.7);
+            box-shadow: 0 0 6px #343434;
 
-    #header {
-    }
+            margin: 170px 0 0 0;
+        }
 
 /*=========================================================
  *
@@ -107,36 +108,32 @@ div {
  *
  * ========================================================*/
 #site_nav_wrapper {
-    bottom: 5px;
-    height: 70px;
-    left: 5%;
-    position: absolute;
-    right: 5%;
+    position: relative;
 }
 
     #site_nav_inner {
         border-radius: 10px;
-        bottom: 0;
-        left: 20%;
-        padding: 0 10%;
-        position: absolute;
-        right: 20%;
-        top: 0;
+        padding: 0 15%;
+        position: relative;
         z-index: 100;
     }
 
         #site_nav {
-            margin: 0 5%;
+            margin: 0 auto;
+            /*Note: to align the a links, change this padding*/
+            padding: 0 0 0 25%;
+            position: relative;
+            overflow: auto;
         }
 
             #site_nav a {
+                color: #12A5B0;
                 display: block;
                 float: left;
-                margin: 0 2%;
+                margin: 0 4% 0 0;
                 min-width: 120px;
                 padding: 15px 0 0 0;
                 text-align: center;
-                color: #12A5B0;
                 font-family: "Sail", cursive;
                 font-size: 1.5em;
                 font-weight: bold;
@@ -146,14 +143,6 @@ div {
             #site_nav a:hover {
                 color: #FD003B;
             }
-
-#site_nav_background {
-    bottom: 15px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
 /*=========================================================
  *
