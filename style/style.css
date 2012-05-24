@@ -121,7 +121,7 @@ div {
         #site_nav {
             margin: 0 auto;
             /*Note: to align the a links, change this padding*/
-            padding: 0 0 0 25%;
+            padding: 0 0 0 18%;
             position: relative;
             overflow: auto;
         }
@@ -221,5 +221,35 @@ div {
 
 .photo2 {
     float: left;
-    margin: 5px;
+    margin: 10px 25px 10px 10px;
+}
+
+.photo3 {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+/*=========================================================
+ *
+ * CLASSES FOR OTHER TABS
+ *
+ * ========================================================*/
+.cute_code {
+
+}
+
+.arts_and_crafts {
+
+}
+
+.wedding {
+
+}
+
+.yummies {
+
+}
+
+.something_extra {
+
 }
