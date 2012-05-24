@@ -48,7 +48,7 @@ h1 {
  * LISTS
  *
  * ========================================================*/
-ul, li {
+ul.li {
     list-style-type: circle;
 }
 
@@ -56,6 +56,9 @@ ul {
     margin-top: 5px;
 }
 
+ol.li {
+    list-style-type: upper-roman;
+}
 /*=========================================================
  *
  * DIVS
@@ -72,6 +75,7 @@ div {
  * ========================================================*/
 /* site_wrapper contains every element */
 #site_wrapper {
+    background: url("http://subtlepatterns.com/patterns/square_bg.png");
     /* _height will only work in IE */
     _height: 100%;
     position: relative;
@@ -88,11 +92,11 @@ div {
 }
 
     #blog_banner {
-        background: url(../image/colored_tiles.jpg) no-repeat;
+        background: url(../image/site_design/colored_tiles.jpg) no-repeat;
         border: 6px solid #FD003B;
         border-radius: 15px;
         height: 280px;
-        margin: 10px 30% 0 30%;
+        margin: 0 30% 0 30%;
         width: 719px;
     }
         #blog_banner h1 {
@@ -161,7 +165,7 @@ div {
  *
  * ========================================================*/
 #main_content_wrapper {
-    background: url(../image/floral2.png); /*#53DBBB;*/
+    background: url(../image/site_design/floral2.png); /*#53DBBB;*/
     border: 1px dashed #12A5B0;
     border-radius: 10px;
     position: relative;
@@ -206,12 +210,17 @@ div {
  * REUSABLE CLASSES
  *
  * ========================================================*/
+blockquote {
+    font-style: italic;    
+    text-align: justify;
+}
+
 .blog_post {
     background: #ffffff;
     border: 4px solid #12A5B0;
     border-radius: 10px;
     margin: 10px;
-    padding: 8px;
+    padding: 10px;
     width: 60%:
 }
 
@@ -219,9 +228,27 @@ div {
     text-align: justify;
 }
 
+.photo {
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    float: left;
+    padding: 5px;
+}
+
+.photo1 {
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    float: right;
+    margin: 0 10px 10px 25px;
+    padding: 5px;
+}
+
 .photo2 {
+    border: 1px solid #BBB;
+    border-radius: 3px;
     float: left;
     margin: 10px 25px 10px 10px;
+    padding: 5px;
 }
 
 .photo3 {
